@@ -268,3 +268,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 ALTER TABLE `mydb`.`users` 
 ADD COLUMN `user_type` ENUM('user', 'admin') NOT NULL AFTER `activity_activity_id`;
+
+ALTER TABLE `mydb`.`users` 
+DROP COLUMN `activity_activity_id`;
+
