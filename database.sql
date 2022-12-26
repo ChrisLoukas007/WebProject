@@ -272,3 +272,10 @@ ADD COLUMN `user_type` ENUM('user', 'admin') NOT NULL AFTER `activity_activity_i
 ALTER TABLE `mydb`.`users` 
 DROP COLUMN `activity_activity_id`;
 
+CREATE TABLE `mydb`.`supermarket` (
+  `supermarket_id` INT NOT NULL AUTO_INCREMENT,
+  `supermarket_name` VARCHAR(45) NOT NULL,
+  `supermarket_address` VARCHAR(45) NOT NULL,
+  `x_coord` DECIMAL NOT NULL,
+  `y_coord` DECIMAL NOT NULL,
+  PRIMARY KEY (`supermarket_id`));
